@@ -1,10 +1,12 @@
 module IB
   def self.db_backed?
-    !!defined?(IB::DB)
+    #!!defined?(IB::DB)
+    false
   end
  
   def self.rails?
-    !!defined?(Rails) && Rails.respond_to?('env')
+    #!!defined?(Rails) && Rails.respond_to?('env')
+    false
   end
 
 end # module IB
